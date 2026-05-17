@@ -1,0 +1,22 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.extensionActivationMode": "always",
+  "idf.openOcdConfigs": [
+    "board/esp32s3-builtin.cfg"
+  ],
+  "idf.port": "detect",
+  "idf.currentSetup": "/home/bgb/.espressif/v6.0.1/esp-idf",
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32s3"
+  },
+  "clangd.path": "/home/bgb/.espressif/tools/esp-clang/esp-20.1.1_20250829/esp-clang/bin/clangd",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=**",
+    "--compile-commands-dir=/home/bgb/esp32Projects/MLX90642_ESP32_Web_Interface/build"
+  ],
+  "ollama-agent.model": "qwen2.5-coder:32b",
+  "ollama-agent.contextLength": 32768,
+  "ollama-agent.maxTokens": 4096,
+  "ollama-agent.temperature": 0.7
+}

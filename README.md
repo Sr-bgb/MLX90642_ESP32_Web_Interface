@@ -1,4 +1,4 @@
-e# MLX90642 ESP32 Web Interface
+# MLX90642 ESP32 Web Interface
 
 This project demonstrates how to interface with the Melexis MLX90642 far-infrared thermal sensor array using an ESP32 microcontroller. The data from the sensor is displayed on a web interface served by the ESP32.
 

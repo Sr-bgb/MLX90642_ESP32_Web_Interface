@@ -1,36 +1,161 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">
-    <meta name="description" content="Open-source tool for fast drive MLX90642 to WEP interfase trough wireless AP">
+    <meta name="description" content="Open-source tool for fast interface between MLX90642 thermal sensor and web browser via ESP32 wireless AP">
     <meta name="keywords" content="FIR sensor, thermometer, Sensor, FIR, MLX90642, ESP32, thermal image, video, open source">
     <!-- Open Graph / Facebook / Discord -->
     <meta property="og:title" content="MLX90642 ESP32 Web Interface Project">
     <meta property="og:description" content="This application provides a web-based interface between the MLX90642 thermal camera and the web browser on your phone or computer. The connection is via WiFi. The ESP32 opens an access point and a web server.">
     <meta property="og:url" content="https://sr-bgb.github.io/MLX90642_ESP32_Web_Interface/">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Sr-bgb/MLX90642_ESP32_Web_Interface/main/docs/preview.png">
     <title>MLX90642 ESP32 Web Interface</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
             padding: 20px;
         }
-        h1 {
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 30px;
             text-align: center;
         }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .github-link {
+            display: inline-block;
+            margin-top: 15px;
+            background: rgba(255,255,255,0.2);
+            padding: 10px 20px;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .github-link:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-2px);
+        }
+        
+        .content {
+            padding: 20px;
+        }
+        
+        .readme-container {
+            background: #f5f5f5;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .readme-header {
+            background: #333;
+            color: white;
+            padding: 12px 20px;
+            font-family: monospace;
+            font-size: 0.9rem;
+        }
+        
         iframe {
             width: 100%;
             height: 80vh;
             border: none;
+            background: white;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background: #f0f0f0;
+            color: #666;
+            font-size: 0.85rem;
+        }
+        
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+            
+            iframe {
+                height: 70vh;
+            }
+        }
+        
+        @media (prefers-color-scheme: dark) {
+            .container {
+                background: #1a1a1a;
+            }
+            
+            .readme-container {
+                background: #2a2a2a;
+            }
+            
+            .footer {
+                background: #2a2a2a;
+                color: #aaa;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>MLX90642 ESP32 Web Interface Project</h1>
-    <p><a href="https://github.com/Sr-bgb/MLX90642_ESP32_Web_Interface" target="_blank">Visit the GitHub repository</a></p>
-    <iframe src="https://rawcdn.githack.com/Sr-bgb/MLX90642_ESP32_Web_Interface/main/README.md"></iframe>
+    <div class="container">
+        <header>
+            <h1>🌡️ MLX90642 ESP32 Web Interface</h1>
+            <div class="subtitle">Far-Infrared Thermal Sensor Array with Web Interface</div>
+            <a href="https://github.com/Sr-bgb/MLX90642_ESP32_Web_Interface" target="_blank" class="github-link">
+                📂 View on GitHub
+            </a>
+        </header>
+        
+        <div class="content">
+            <div class="readme-container">
+                <div class="readme-header">
+                    📖 README.md
+                </div>
+                <iframe src="https://rawcdn.githack.com/Sr-bgb/MLX90642_ESP32_Web_Interface/main/README.md" title="README content"></iframe>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>🚀 Open-source project | ESP32 + MLX90642 | Access Point + Web Server</p>
+        </div>
+    </div>
 </body>
 </html>

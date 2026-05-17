@@ -17,6 +17,7 @@ This project demonstrates how to interface with the Melexis MLX90642 far-infrare
 
 ## Folder Structure
 
+```plaintext
 MLX90642_ESP32_Web_Interface/
 ├── build/
 ├── main/
@@ -25,6 +26,7 @@ MLX90642_ESP32_Web_Interface/
 ├── components/
 ├── CMakeLists.txt
 └── README.md
+```
 
 
 ## Installation Instructions

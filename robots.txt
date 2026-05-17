@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://sr-bgb.github.io/MLX90642_ESP32_Web_Interface/sitemap.xml
